@@ -1,0 +1,258 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
+}
+.cabecera{
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.margen-interno{
+    padding: 0px 0px;
+    
+}
+    .header{
+        display: flex;
+        background: url(nosé.png	);
+        background-position: top;
+        background-attachment: contain;
+        background-size: cover;
+        justify-content: space-between;
+        display: flex;
+        flex-flow: column nowrap;
+        transition: 1s;
+        
+
+        
+    }
+  header.abajo{
+    display: flex;
+    background: url(nosémorao.jpg);
+    background-position: top;
+    background-attachment: contain;
+    background-size: cover;
+    justify-content: space-between;
+        transition: 1s;
+        display: flex;
+        flex-flow: column nowrap;
+
+        
+  }
+    
+        .menu{
+            backdrop-filter:blur(10px);
+            background: rgba(0, 0, 0, 0.1);
+            display: flex;
+            height: 100px;
+            min-height: 100px;
+            align-items: center;
+            border-bottom: 1px solid rgba(239, 85, 85, 0.901);
+            font-size: 50px;
+            letter-spacing: 2px;
+            
+            
+            
+        }
+    
+        .logo{
+            
+            flex:5 1 auto;
+            height: -10px;
+        
+        }
+        .logo img{
+            transition:all .3s ease;
+            display: flex;
+            flex: 1 1 auto;
+            flex-flow: row nowrap;
+            align-items: center;
+            height: 90px;
+            filter:drop-shadow(0px 0px 1px #000000);
+            filter:hue-rotate(140deg);
+            overflow: hidden;
+        }
+        .logo img:hover{
+            filter:hue-rotate(50deg);
+            transform:scale(1.10);
+             
+        }
+        .redes{
+            align-items: center;
+            flex:5 1 auto;
+            
+            
+        }
+        .redes a{
+            transition:all .3s ease;
+            font-size: 20px;
+            text-transform: uppercase;
+            align-items: center;
+            justify-content: space space-between;
+            letter-spacing: 2px;
+        }
+        .redes a:hover{
+            transform: scale(1.10);
+            color: rgb(80 80 80);
+            
+            
+        }
+        .redes i:hover{
+                transform: scale(1.10);
+                filter: brightness(25%);
+   
+        }
+  
+           .opciones{
+            
+            flex:1 1 auto;
+            height: 30px;
+           }
+           
+           
+          .video{
+            align-items: center;
+            object-position: left;
+            position: absolute;
+          }
+          .TITULO h5{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 0px 0px 0px;
+            font-size: 38px;
+            font-weight: 600;
+            padding: 200px 0px;
+             text-align: center;
+             text-shadow: 0px 0px 15px rgb(0, 0, 0);
+          }
+        .texto-principal{
+        padding: 200px 100px;
+          height: 0px;
+          align-items: center;
+          
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            color: rgb(249, 142, 142);
+            margin: 50px 25px 0;
+            text-align: center;
+            
+        }
+    .section{
+    
+    display: flex;
+    }
+        .articulos{
+            
+        justify-content: space-between;
+        transition: 1s;
+        display: flex;
+        flex-flow: column nowrap;
+        flex:2 1 auto;
+        display: flex;
+       
+        flex-flow: row wrap;
+         }
+         .article{
+             flex: 1 1 40%;
+             font-size: 13px;
+             letter-spacing: 1px;
+             margin: 10px 10px 10px 0px;
+
+             border-radius: 50px;
+             
+             }
+         .article img{
+             width: 100%;
+            display: flex;
+         }
+         .article a{
+            color: white;
+            font-size: 13px;
+            padding: 10px;
+            margin:10px 0;
+            display: inline-block;
+         }
+         h3{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            color:rgb(255, 255, 255);
+            font-size: 12px;
+            padding: 10px 0;
+            margin-top: -20px;
+         }
+         h2{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 25px;
+            text-transform: uppercase;
+            padding: 0px 0 10px 0;
+            
+         }
+        .navegacion{
+        flex: 1 1 100%;
+        margin: 10px 10px 0 0px;
+         }
+         .navegacion a{
+            color: black;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+         }
+
+.footer{
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-top: center;
+}
+.pie{
+    /*background: rgb(145, 145, 145);*/
+    padding: 20px 0;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+.pie a{
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+  
+@media all and(max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .header{
+        flex-direction: column;
+         padding: 10px 0px;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    
+        
+    }
+
+@media all and(max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+@media all and(max-width: 400px){
+    }
+
+
+       
+    
